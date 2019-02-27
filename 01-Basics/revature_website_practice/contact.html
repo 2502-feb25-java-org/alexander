@@ -1,0 +1,127 @@
+<!-- comments-->
+<!Doctype html>
+<html lang=en-US>
+
+<head>
+    <title>Contact Us Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="index.html">
+                                    <img alt="Image Not found"
+                                    src="https://revature.com/wp-content/uploads/2017/12/revature-logo-600x219.png"
+                                    width="100" length="100" />
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="Contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                LogIn/SignUp
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#Login">LogIn(Existing User)</a>
+                                <a class="dropdown-item" href="#SignUp">SignUp(New User)</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#AdminLogIn">Admin LogIn</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                          <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+        </header>
+    </div>
+    <div class="container">
+        <main>
+
+            <form action="http://foo.com" method="get">
+                <fieldset>
+                    <div class="jumbotron">
+                        <legend>Contact Us</legend>
+                    </div>
+                    <div class="form-group">
+                    <label for="name"></label>Enter your name: </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text"class="form-control" name="name" placeholder="Name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Enter your email: </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"></label>Write your message: </label>
+                    </div>
+                    <div>
+                        <textarea name="message" rows="6" cols="60" placeholder="Text" id="message" required></textarea>
+                        <!--<textarea rows="4" cols="50">
+                            <input type="text"class="form-control" name="message" placeholder="Text" id="message" required>
+                        </textarea> -->
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </main>
+    </div>
+    <br></br>
+    
+    <div class="container">
+            <a href="https://linkedin.com">
+                    <img alt="Image Not found"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8Al9MAlNJpuuEAktGr0uv4/f4ootgAjtAAk9EAkNDj8fnl8/mjz+kaoNf1+fxvveLY7fcAmtRLrdx8wuWKyOddtN7q9/y/3vDE5PRuveLL5/Q4p9qu2u97veLT6vaTyOal1u1Ssd0+j657AAADq0lEQVR4nO2di26CMBRApXQoHTrxhW46dP//kQONU4rgtkBr6znJErPboCdQettSOhgAAAAAAAAAAAAAAAAAAAAAAAAAAADAb8jWy/fQEMt1ZtwvXQUqFqaIVbBKzQouRiIwixgtDPq9zZVhvxI1fzNmOI8tCAZBPDcluLBxBkuUoQs1HVkSDIKRmdvNyvRN5oJYmRDMrPmVmGgX17ZqYYlaGzBc2rmRnoiXBgzf7VXDoiJODRiGVg1DDDHEEEMMMcQQQzOG5dCRz4Yy3obT1URKTw3j2SE6lkoXvZxI64YyjH7K5ZMeFG0bxpXvz2beGYphtWTafV/ZsqH60IouOr/dWDYc6kXTzmuiXcN4Xys79MvwxjjYV9cn0bKhXg17yPAsG25qZTsfHrdrKA+1slu/DOuTCknHfrYNA6VPKox9aw/1r4+6T9ts56WqWhO/uu9B2Tas3mzCHiaprBsW3adzXdxs+5ijsm8YCPH1stmsl0PZy0jGAxgWP0IqpfqaY3wIw17B8EEN/3BA5wzLR/Imw+12OJPqV4e1bSjUhVHxdx0YXQLnp/6knO/zJIuK7CdLd9PZLyStZ23R2zWv56xNTCuB6LM8RBzvq3lstJnfdbRsKF+qJaNhQ+BQpHPxIhrUyLd3Er2HNdR6juMiHah3l48s21O9hzUcVwNjNXltOvy4VdEZQ5E0H791kNUZw4ZL9ETb0Icrhu0PGH60nERXDO8wb2lx/TBcN59ETwxbxnc8MWwZSPbFcNd4mTpmGGV5ntzI3QZJY6vvlGEezsquxiy8scLAi6t0eR6qkmJXCzY2+g4ZXmfYMtejn+4b5tc1TdTWM+2bxurcMaxODku9KjZO6ThjqE271eIH5w21dTe1mcfGBtEZQ33djf6cyq6pQXTGsHav1OLuG+qJp9Li7hvqPcCRFnffUM9Z/DPUnwbDEMNuwfDCMxtOnt6wcb04hp3QgWGEIYb9YsJwg2GvYHglgiGG7hrezWmcMdx6b/jvc/jhiuF5wOnP/UMM++U/hvqaL18Mf4ZFa4F7hvmDGorPLEmS1xPFp3R2L3BGpck12aPOrh3fiCHkifJTNSDO/xf13y+D6itZG7/BtSfZ/wyGGGKIIYYYYoghhhhiiCGGGB4NTbzP2/93svv/Xn3/90bwf3+LJ9ijxP99ZqztFSSN7RVkbb+nWyv5+sL3PbsGT7Dv2uC4d97U0NZ5Uxt75wEAAAAAAAAAAAAAAAAAAAAAAAAAALjJN1nNXeZifcYyAAAAAElFTkSuQmCC"
+                    width="100" length="100" />
+            </a>
+            <a href="https://facebook.com">
+                    <img alt="Image Not found"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///9fg893neBbgM50mt6JodmWrd5Yfs2kt+KMo9pTe8xcgc76+/6Qp9xxkNRSeszZ4fNihtFrkNi/zOqdseDO2O/p7vjV3vJ4ltbH0u3f5vWsvOS4xujv8/quv+XM1u6Am9dpjdZB3h0bAAADnUlEQVR4nO3d63aiMBRA4SLVSAIilVoV8PL+L1lv7WglCNQeCbP3z1mDWV9V0BDw5YWIiIiIiIiIiIiIiIiIiIiIiIiIiIjqNJ+l0VCmIJ3NxX3TrdLKl2o/1nYqC4xi35PNj0eCvmKhhH2H1KIQEz4FeCBKAUfPAe6JQi/UVfxvTCOSZ87DxSsR4fB7J/P2KtTuPKA/lAAW5usv+joQ6+00pvEldjYbfX6BCgIHg/OzqDcCwuy0nzGJJHDwet7XZALC9LwnfRMVDpKTMBUQjp4qlDheIESIEKGgUOoj26knCJ8SQoQIESL8T4XGKKVPqa+sk7HOCY2vVLJI8+Vm33I5m+X5er3OsqGN6JjQaG84K509m9nGcEpo9CS3zSvlfRCqZGkfowdCo8dVY6ydFxrzXjlG5rrQJHdm510XGu/eGd2x40J99/xK6rYwztuP4YTQr3GeM3L6M42qseQgcFlY6xSg059L9UeNMbbGsrUDQpPUGWPhsLDeCcCJw8J6aw0cFhq/1hg7d4X2Pen8fXn4kn9smbgrtLwNi3ESX8zUaBvQAaEu/do7TZTV5JqwdEcz92v6XBCqspmZoP4jdl5okvD2AcP4/obuCCclwmnvhR8aIUKECP9a+N57Ic8hQoQI/164Qdhp4Y/Le1SZcBmb4/9zUmh2i6smw7L34W6y2yWer+Lv3BGqWfPHD8MidGfFUBvhS9W3/r4IV+4IyycP72bfu/ZFaF1O00Fhu4vp7EN0T1i9MMiW9fRhb4TWEzMdFNY5pX1T4TkkbHWrh5V9hM4J211dXvF1qidC6+rS3gitq9q6KGx1W5mt/b4p3RO2uUFAaF2J0RdhYT8cdlBY8oX3bvOKWY1+CKvmwLsnbDNAxcGie0I/iqLRsfRU2fLg1TC6qmJH0z2hd7hP10W6bEnUR3x9Y6+qSbfuCX+Cg5IHnDo9X4oQIUKECBEiRIgQIUKECBEiRIgQIUKECBF2WFhxll1AKHE/b/uyOgnhWkDY5OKBhwtbLiNrVlFvzXl9oX297E3Ga3NSuXFR+5fpb4VCP1Iyb3Bl8oOF7dbnNC9r/U78pVBL/PbDsQa3CHikUJVt/TeFQctn8VdCHYkB963juvfqeJDQqFjiUHhRkSZaNa50LcbqYi3G7Sanf9NJKveDXV+F0zwbN61sPc18GwTBeS3NaHS1/CZNj1tl+VTkOEhERERERERERERERERERERERERERNSDPgEQb3U7x6QWLQAAAABJRU5ErkJggg=="
+                    width="100" length="100" />
+            </a>
+            &ensp;
+            <a href="https://twitter.com/">
+                    <img alt="Image Not found"
+                    src="https://pbs.twimg.com/profile_images/1092100446586630146/3uFY0wpD_400x400.jpg"
+                    width="60" length="60" />
+            </a>
+        <footer>&copy; Revature LLC</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
