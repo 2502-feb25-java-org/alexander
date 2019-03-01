@@ -10,7 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="loadOldSignUp()">
     <div class="container">
         <header>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -74,11 +74,17 @@
                     </div>
                     <!-- <div class="row"> -->
                     <div class="form-group">
-                    <label for="name"></label>Enter your name: </label>
+                    <label for="first-name"></label>Enter your first name: </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="firstName" onchange="storeSignUp()" class="form-control" name="first-name" placeholder="First name" id="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name"></label>Enter your last name: </label>
                     </div>
                     <!-- <div class="col-md-6"> -->
                     <div class="form-group">
-                        <input type="text"class="form-control" name="name" placeholder="Name" id="name" required>
+                        <input type="text" id="lastName" onchange="storeSignUp()" class="form-control" name="last-name" placeholder="Last name" id="last-name" required>
                     </div>
                     <!-- </div> -->
                     <!-- <div class="row"> -->
@@ -88,7 +94,7 @@
                     </div>
                     <!-- <div class="col-sm-6">  -->
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" required>
+                        <input type="email" id="email" onchange="storeSignUp()" class="form-control" name="email" id="email" required>
                     </div>
                     <!-- </div> -->
                     <!-- <div class="row"> -->
@@ -98,7 +104,7 @@
                     </div>
                     <!-- <div class="col-sm-6">                             -->
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" id="email" required>
+                        <input type="password" id="password" onchange="storeSignUp()" class="form-control" name="password" id="email" required>
                         <!-- </div> -->
                     </div>
                     <!-- <div class="row"> -->
@@ -107,7 +113,7 @@
                         <label for="phone">Enter your Phone: </label>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <input type="tel" id="phone" onchange="storeSignUp()" class="form-control" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
                     <!-- </div> -->
                 </fieldset>
@@ -117,13 +123,13 @@
                     </div>
                     <div>
                         <label for="Age">Age</label>
-                        <input type="number" name="age" min=16 max=120 id="age" required>
+                        <input type="number" id="age" onchange="storeSignUp()" name="age" min=16 max=120 id="age" required>
                     </div>
                     <div>
                         <label for="gender">Gender :
                             <label for="male">Male<input type="radio" name="gender" id="male" /></label>
                             <label for="female">Female<input type="radio" name="gender" id="female" /> </label>
-                            <label for="others">Others<input type="radio" name="gender" id="others" /></label>
+                            <label for="others">Other<input type="radio" name="gender" id="others" /></label>
                         </label>
                     </div>
                 </fieldset>
@@ -161,6 +167,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
