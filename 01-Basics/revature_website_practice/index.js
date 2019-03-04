@@ -5,8 +5,9 @@ function storeSignUp(){
     var lastName=document.getElementById("lastName").value;
     localStorage.lastName=lastName;
 
+    /*
     if(firstName===lastName)
-        alert("First name cannot be the same as last name")
+        alert("First name cannot be the same as last name");*/
 
     var email=document.getElementById("email").value;
     localStorage.email=email;
@@ -21,8 +22,14 @@ function storeSignUp(){
     localStorage.age=age;
 
     var genders=document.getElementsByName("gender");
-    alert(typeof(gender));
-    localStorage.genders=genders;
+    if(genders){
+        for(i=0;i<genders.length;i++){
+            if(genders[i].checked){
+                localStorage.gender=genders[i].value;
+                break;
+            }
+        }
+    }
 }
 function loadOldSignUp(){
     var firstName=document.getElementById("firstName");
@@ -45,10 +52,12 @@ function loadOldSignUp(){
 
     var genders=document.getElementsByName("gender");
 
-    if(localStorage.genders[0].checked)
-        genders[0].value= checked;
-    else if(localStorage.genders[1].checked)
-        genders[1].value= checked;
-    else
-        genders[2].value= checked;
+    if(genders&&localStorage.gender){
+        for(i=0;i<genders.length;i++){
+            if(genders[i].value==localStorage.gender){
+                genders[i].checked=true;
+                break;
+            }
+        }
+    }
 }

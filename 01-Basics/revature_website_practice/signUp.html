@@ -127,9 +127,9 @@
                     </div>
                     <div>
                         <label for="gender">Gender :
-                            <label for="male">Male<input type="radio" name="gender" id="male" /></label>
-                            <label for="female">Female<input type="radio" name="gender" id="female" /> </label>
-                            <label for="others">Other<input type="radio" name="gender" id="others" /></label>
+                            <label for="male">Male<input type="radio" id="male" onchange="storeSignUp()" name="gender" value="male"/></label>
+                            <label for="female">Female<input type="radio" id="female" onchange="storeSignUp()" name="gender" value="female"/> </label>
+                            <label for="others">Other<input type="radio" id="other" onchange="storeSignUp()" name="gender" value="other"/></label>
                         </label>
                     </div>
                 </fieldset>
