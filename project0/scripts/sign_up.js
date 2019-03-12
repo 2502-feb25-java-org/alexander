@@ -17,9 +17,6 @@ function storeSignUp(){
     var email=document.getElementById("email").value;
     localStorage.email=email;
 
-    var password=document.getElementById("password").value;
-    localStorage.password=password;
-
     var phone=document.getElementById("phone").value;
     localStorage.phone=phone;
 
@@ -35,6 +32,25 @@ function storeSignUp(){
             }
         }
     }
+	
+	var adreesLine1=document.getElementById("address-line1").value;
+    localStorage.adreesLine1=adreesLine1;
+	
+	var adreesLine2=document.getElementById("address-line2").value;
+    localStorage.adreesLine2=adreesLine2;
+	
+	var city=document.getElementById("city").value;
+    localStorage.city=city;
+	
+	var region=document.getElementById("region").value;
+    localStorage.region=region;
+	
+	var postalCode=document.getElementById("postal-code").value;
+    localStorage.postalCode=postalCode;
+	
+	var country=document.getElementById("country").value;
+    localStorage.country=country;
+	
 }
 function loadOldSignUp(){
     var firstName=document.getElementById("firstName");
@@ -45,9 +61,6 @@ function loadOldSignUp(){
 
     var email=document.getElementById("email");
     email.value=localStorage.email;
-
-    var password=document.getElementById("password");
-    password.value=localStorage.password;
 
     var phone=document.getElementById("phone");
     phone.value=localStorage.phone;
@@ -65,4 +78,22 @@ function loadOldSignUp(){
             }
         }
     }
+	
+	var adreesLine1=document.getElementById("address-line1");
+    adreesLine1.value=localStorage.adreesLine1;
+	
+	var adreesLine2=document.getElementById("address-line2");
+    adreesLine2.value=localStorage.adreesLine2;
+	
+	var city=document.getElementById("city");
+    city.value=localStorage.city;
+	
+	var region=document.getElementById("region");
+    region.value=localStorage.region;
+	
+	var postalCode=document.getElementById("postal-code");
+    postalCode.value=localStorage.postalCode;
+	
+	var country=document.getElementById("country");
+    country.value=localStorage.country;
 }
