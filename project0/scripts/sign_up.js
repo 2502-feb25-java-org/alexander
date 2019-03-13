@@ -5,10 +5,10 @@ function storeSignUp(){
     var lastName=document.getElementById("lastName").value;
     localStorage.lastName=lastName;
 	
-	if (firstName === lastName) {
+	if (firstName && lastName && firstName === lastName) {
 		alert("First name and last name cannot be the same!");
-		document.getElementById("firstName").value = "Enter first name";
-		document.getElementById("lastName").value = "Enter last name";
+		document.getElementById("firstName").value = "";
+		document.getElementById("lastName").value = "";
 		
 		//document.getElementById("firstName").value = "First and last name cannot be the same!";
 		//document.getElementById("lastName").value = "First and last name cannot be the same!";
