@@ -133,5 +133,5 @@ function loadOldSignUp() {
 
 function signUpThankYou() {
     alert("Thank you for signing up! We will get back to you soon.");
-    window.location.href = "index.html";
+    return true;
 }
