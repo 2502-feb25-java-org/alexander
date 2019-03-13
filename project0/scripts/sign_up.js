@@ -2,7 +2,7 @@ function storeSignUp() {
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
 
-    if (firstName && lastName && firstName === lastName) {
+    if (firstName && lastName && firstName.toLowerCase() === lastName.toLowerCase()) {
         alert("First name and last name cannot be the same!");
         delete localStorage.firstName;
         delete localStorage.lastName;
