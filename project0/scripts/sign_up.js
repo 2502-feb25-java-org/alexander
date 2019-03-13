@@ -1,16 +1,18 @@
 function storeSignUp() {
     var firstName = document.getElementById("firstName").value;
-
     var lastName = document.getElementById("lastName").value;
 
     if (firstName && lastName && firstName === lastName) {
         alert("First name and last name cannot be the same!");
+        delete localStorage.firstName;
+        delete localStorage.lastName;
         document.getElementById("firstName").value = "";
         document.getElementById("lastName").value = "";
     }
-
-    localStorage.firstName = firstName;
-    localStorage.lastName = lastName;
+    else {
+        localStorage.firstName = firstName;
+        localStorage.lastName = lastName;
+    }
 
     var email = document.getElementById("email").value;
     localStorage.email = email;
