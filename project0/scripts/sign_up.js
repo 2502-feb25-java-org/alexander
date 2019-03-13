@@ -7,8 +7,8 @@ function storeSignUp(){
 	
 	if (firstName === lastName) {
 		alert("First name and last name cannot be the same!");
-		document.getElementById("firstName").value = "";
-		document.getElementById("lastName").value = "";
+		document.getElementById("firstName").value = "Enter first name";
+		document.getElementById("lastName").value = "Enter last name";
 		
 		//document.getElementById("firstName").value = "First and last name cannot be the same!";
 		//document.getElementById("lastName").value = "First and last name cannot be the same!";
@@ -96,4 +96,9 @@ function loadOldSignUp(){
 	
 	var country=document.getElementById("country");
     country.value=localStorage.country;
+}
+
+function signUpThankYou() {
+    alert("Thank you for signing up! We will get back to you soon.");
+    window.location.href = "index.html";
 }

@@ -11,7 +11,7 @@
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="loadOldSignUp()">
+<body>
     <div class="container">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -37,7 +37,7 @@
                 <div class="jumbotron">
                         <legend align="center">Join Us</legend>
                     </div>
-            <form action="index.html" method="get">
+            <form action="signUpThankYou()" method="get" onload="loadOldSignUp()">
                 <div class="row">
                     <div class="col-sm-6">
                             <h5>Personal Information</h5>
@@ -92,7 +92,7 @@
                 </div>
                 <br></br>
                 <div>
-                    <input type="submit" value="Sign Up">
+                    <input type="button" value="Sign Up" onclick="signUpThankYou();">
                 </div>
                     <!-- </div> -->
                 </fieldset>
@@ -421,8 +421,9 @@
             <a href="https://www.instagram.com/teamrevature/">
                 <img alt="Image Not Found" src="../images/instagram.png" width="60" length="60" />
             </a>
+            &ensp;&ensp;&ensp;
+            &copy; <a href="https://revature.com/our-story/">Revature. All Rights Reserved.</a><br>
         </nav>
-        <footer>&copy; <a href="https://revature.com/our-story/">Revature. All Rights Reserved.</a><br></br></footer>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -434,7 +435,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="../scripts/sign_up.js"></script>
+        <script src="../scripts/sign_up.js"></script>
 </body>
 
 </html>
