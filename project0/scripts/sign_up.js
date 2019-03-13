@@ -54,19 +54,34 @@ function storeSignUp(){
 }
 function loadOldSignUp(){
     var firstName=document.getElementById("firstName");
-    firstName.value=localStorage.firstName;
+
+    if (localStorage.firstName && firstName) {
+        firstName.value=localStorage.firstName;
+    }
 
     var lastName=document.getElementById("lastName");
-    lastName.value=localStorage.lastName;
 
+    if (localStorage.lastName && lastName) {
+        lastName.value=localStorage.lastName;
+    }
+    
     var email=document.getElementById("email");
-    email.value=localStorage.email;
 
+    if (localStorage.email && email) {
+        email.value=localStorage.email;
+    }
+    
     var phone=document.getElementById("phone");
-    phone.value=localStorage.phone;
+
+    if (localStorage.phone && phone) {
+        phone.value=localStorage.phone;
+    }
 
     var age=document.getElementById("age");
-    age.value=localStorage.age;
+
+    if (localStorage.age && age) {
+        age.value=localStorage.age;
+    }
 
     var genders=document.getElementsByName("gender");
 
@@ -79,23 +94,41 @@ function loadOldSignUp(){
         }
     }
 	
-	var adreesLine1=document.getElementById("address-line1");
-    adreesLine1.value=localStorage.adreesLine1;
+    var adreesLine1=document.getElementById("address-line1");
+    
+    if (localStorage.adreesLine1 && adreesLine1) {
+        adreesLine1.value=localStorage.adreesLine1;
+    }
 	
-	var adreesLine2=document.getElementById("address-line2");
-    adreesLine2.value=localStorage.adreesLine2;
+    var adreesLine2=document.getElementById("address-line2");
+    
+    if (localStorage.adreesLine2 && adreesLine2) {
+        adreesLine2.value=localStorage.adreesLine2;
+    }
 	
-	var city=document.getElementById("city");
-    city.value=localStorage.city;
+    var city=document.getElementById("city");
+
+    if (localStorage.city && city) {
+        city.value=localStorage.city;
+    }
 	
-	var region=document.getElementById("region");
-    region.value=localStorage.region;
+    var region=document.getElementById("region");
+    
+    if (localStorage.region && region) {
+        region.value=localStorage.region;
+    }
 	
-	var postalCode=document.getElementById("postal-code");
-    postalCode.value=localStorage.postalCode;
+    var postalCode=document.getElementById("postal-code");
+    
+    if (localStorage.postalCode && postalCode) {
+        postalCode.value=localStorage.postalCode;
+    }
 	
 	var country=document.getElementById("country");
-    country.value=localStorage.country;
+    
+    if (localStorage.country && country) {
+        country.value=localStorage.country;
+    }
 }
 
 function signUpThankYou() {
