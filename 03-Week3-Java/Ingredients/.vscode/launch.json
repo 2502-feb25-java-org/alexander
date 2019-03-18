@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Sandwhich",
+            "request": "launch",
+            "mainClass": "com.revature.Sandwhich",
+            "projectName": "Ingredients"
+        }
+    ]
+}
