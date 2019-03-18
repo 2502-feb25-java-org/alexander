@@ -35,13 +35,18 @@ public class JavaCodingChallenge {
     	ArrayList<String> palindromeList = new ArrayList<>();
     	
     	// for each string in the list, reverse the string and add to the palindrome test
+    	// if it is a palindrome
     	for (int i = 0; i < originalList.size(); i++) {
-    		palindromeList.add(reverseString(originalList.get(i)));
+    		String str = originalList.get(i); 
+    		String reverseStr = reverseString(str);
+    		
+    		if (str.equals(reverseStr)) {
+    			palindromeList.add(str);
+    		}
     	}
     	
-    	//System.out.println(originalList.toString()); // print the original list
-    	//System.out.println(palindromeList.toString()); // print palindrome list
-    	
+    	System.out.println(originalList.toString()); // print the original list
+    	System.out.println(palindromeList.toString()); // print palindrome list
     }
     
     // Reverse each string (i.e., obtain a palindrome
