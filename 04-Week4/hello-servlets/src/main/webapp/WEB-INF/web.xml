@@ -15,14 +15,30 @@
 	which we will learn later)
  -->
  
+ <!--  SERVLET CONTEXT
+ 	parameter(s) applied to every servlet within the context
+ 	of our application -->
+ 
  <servlet>
  	<servlet-name>MyFirstServlet</servlet-name>
  	<servlet-class>com.revature.servlets.HelloServlet</servlet-class>
+ 	<!--  SERVLET CONFIG
+ 		parameter(s) applied to a particular servlet -->
+ 		<init-param>
+ 			<param-name>hello</param-name>
+ 			<param-value>Servlet specific parameter -- servlet config</param-value>
+ 		</init-param>
+ 	<load-on-startup>1</load-on-startup>
+ </servlet>
+ 
+ <servlet>
+ 	<servlet-name>MyHttp</servlet-name>
+ 	<servlet-class>com.revature.servlets.MyHttpServlet</servlet-class>
  </servlet>
  
  <servlet-mapping>
- 	<servlet-name>MyFirstServlet</servlet-name>
- 	<url-pattern>/hello</url-pattern>
+ 	<servlet-name>MyHttp</servlet-name>
+ 	<url-pattern>/http</url-pattern>
  </servlet-mapping>
  
  
