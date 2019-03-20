@@ -31,7 +31,20 @@ public class VetClinic {
     	Dog dog2 = new Dog("Max", "Dalmatian", 5);
     	
     	Queue<Pet> patientQueue = new LinkedList<>(); // a line of patients
-    	
+
+    	patientQueue.offer(dog1);
+    	patientQueue.offer(cat1);
+    	patientQueue.offer(cat2);
+    	patientQueue.offer(dog2);
+    	Pet seenPatient = patientQueue.poll();
+    	patientQueue.poll();
+    	patientQueue.offer(cat3);
+    	patientQueue.poll();
+    	patientQueue.poll();
+    	patientQueue.poll();
+    	printLineSize(patientQueue);
+    	printAllPatients(patientQueue);
+
     }
     
     // Print the current queue size.
