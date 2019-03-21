@@ -10,32 +10,34 @@ import javax.servlet.ServletResponse;
 
 import org.apache.log4j.Logger;
 
-public class HelloServlet extends GenericServlet {
+public class HelloServlet extends GenericServlet{
 	
 	/*
 	 * Log4j - a logging tool for Java
-	 * - use this instead of basic sysouts
+	 * - use this instead of basic sysouts 
 	 */
-	
-	private static Logger log = Logger.getLogger(HelloServlet.class);
+	private static Logger log =  Logger.getLogger(HelloServlet.class);
 	static int count = 0;
-
 	//LIFECYCLE STEP 1 - INIT
 	@Override
 	public void init() throws ServletException {
 		super.init();
-		log.trace("INITIALIZING GENERIC SERVLET");
+		log.trace("INITIALIZING"
+				+ " GENERIC SERVLET");
 	}
+
 	
 	//STEP 2 - SERVICE
 	@Override
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-		log.trace("IN HELLO SERVLET (GENERIC SERVLET) SERVICE METHOD");
+	public void service(ServletRequest req, ServletResponse res)
+			throws ServletException, IOException {
+		log.trace( "IN HELLO SERVLET (GENERIC SERVLET) SERVICE METHOD!");
 		
 		PrintWriter writer = res.getWriter();
 		
 		//get servlet params and add to our response
-		String context = getServletContext().getInitParameter("environemtVar");
+		String context = getServletContext()
+				.getInitParameter("environmentVar");
 		String config = getServletConfig().getInitParameter("helloConfig");
 		
 		//write response
@@ -44,17 +46,18 @@ public class HelloServlet extends GenericServlet {
 				+ "Request Count: " + ++count + "<br>"
 				+ "ServletContext: " + context + "<br>"
 				+ "ServletConfig: " + config;
-		
-		res.setContentType("text/html");
 				
+		res.setContentType("text/html");		
+		
 		writer.write(respText);
+		
 	}
-	
 	//STEP 3 - DESTROY
 	@Override
 	public void destroy() {
 		super.destroy();
-		log.trace("DESTROYING THE SERVICE");
+		log.trace("DESTROYING GENERIC SERVLET");
 	}
+
 
 }
